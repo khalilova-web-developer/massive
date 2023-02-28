@@ -1,11 +1,24 @@
-let arr = ['refat', 'amal', 'jamshed']
-let name = prompt('Which name should be deleted?').trim().toLowerCase()
+let carPrices = [9000, 4000, 16000, 15000, 22000, 37000, 70000, 55000, 40000]
 
-if(arr.includes(name)){
-    arr.splice(arr.indexOf(name), 1)
-   console.log(arr)
-   
-}
-else{
-    console.log('This name is not included in the list!')
-}
+    
+
+let from = prompt('from') // 20000
+let to = prompt('to') // 40000
+
+
+let filtered = carPrices.filter(price => price >= from && price <= to)
+console.log(filtered)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
